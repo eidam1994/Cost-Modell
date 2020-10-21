@@ -31,7 +31,7 @@ module.exports = {
         cMaschine: 'Maschinenkosten',
         cMaterial: 'Materialkosten',
         cElektricity: 'Stromkosten',
-        cGas: 'Schultzgaskosten',
+        cGas: 'Schutzgaskosten',
         cLabor: 'Arbeitskosten',
         cTotal: 'Gesamtkosten'
     },

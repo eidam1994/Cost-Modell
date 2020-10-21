@@ -232,7 +232,12 @@
                 this.cElektricity = cElektricity.toFixed(2)
                 // console.log(cElektricity.toFixed(2))
                 let cGas = this.gch * this.buildTime
-                this.cGas = cGas.toFixed(2)
+                let material = this.material
+                if (material == "titanium alloys" || material == "aluminum alloys" || material == "stainless steel" || material == "cobalt chromium") {
+                    this.cGas = cGas.toFixed(2)   
+                } else {
+                    this.cGas = 0
+                }
                 // console.log(cGas.toFixed(2))
                 let cLabor = 35.9 * (parseFloat(this.buildTime) / 50);
                 this.cLabor = cLabor.toFixed(2)
